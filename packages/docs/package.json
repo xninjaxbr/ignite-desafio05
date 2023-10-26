@@ -1,5 +1,5 @@
 {
-  "name": "@myll-ui/docs",
+  "name": "@mll-ui/docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,10 +13,10 @@
     "build": "storybook build"
   },
   "dependencies": {
-    "@myll-ui/eslint-config": "*",
-    "@myll-ui/react": "*",
-    "@myll-ui/tokens": "*",
-    "@myll-ui/ts-config": "*",
+    "@mll-ui/eslint-config": "*",
+    "@mll-ui/react": "*",
+    "@mll-ui/tokens": "*",
+    "@mll-ui/ts-config": "*",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",

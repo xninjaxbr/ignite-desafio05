@@ -1,5 +1,5 @@
 import { Config } from 'tailwindcss'
-import {colors, fontSizes, fontWeights,fonts,lineHeights,radii,space} from '@myll-ui/tokens'
+import {colors, fontSizes, fontWeights,fonts,lineHeights,radii,space} from '@mll-ui/tokens'
 
 /** @type {import('tailwindcss').Config} */
 export default {

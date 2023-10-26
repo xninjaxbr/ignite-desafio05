@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import {Button , ButtonProps } from '@myll-ui/react'
+import {Button , ButtonProps } from '@mll-ui/react'
 import {  ArrowRight } from 'phosphor-react'
 
 

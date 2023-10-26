@@ -1,5 +1,5 @@
 {
-  "name": "@myll-ui/tokens",
+  "name": "@mll-ui/tokens",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -13,8 +13,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@myll-ui/eslint-config": "*",
-    "@myll-ui/ts-config": "*",
+    "@mll-ui/eslint-config": "*",
+    "@mll-ui/ts-config": "*",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   }

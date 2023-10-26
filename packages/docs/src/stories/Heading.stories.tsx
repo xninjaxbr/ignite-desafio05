@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import {Heading , HeadingProps } from '@myll-ui/react'
+import {Heading , HeadingProps } from '@mll-ui/react'
 
 
 export default {

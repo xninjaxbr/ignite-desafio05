@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, MultStep, MultStepProps } from '@myll-ui/react'
+import { Box, MultStep, MultStepProps } from '@mll-ui/react'
 
 
 

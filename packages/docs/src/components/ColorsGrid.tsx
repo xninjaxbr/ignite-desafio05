@@ -1,4 +1,4 @@
-import {colors} from '@myll-ui/tokens'
+import {colors} from '@mll-ui/tokens'
 import  {getContrast } from 'polished'
 
 

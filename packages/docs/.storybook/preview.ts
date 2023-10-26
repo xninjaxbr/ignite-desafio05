@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/react";
 import { themes } from '@storybook/theming'
 
-import '@myll-ui/react/dist/output.css'
+import '@mll-ui/react/dist/output.css'
 
 const preview: Preview = { 
   parameters: {

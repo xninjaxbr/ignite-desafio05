@@ -26,5 +26,11 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
+  viteFinal: (config, {configType}) => {
+    if(configType === 'PRODUCTION'){
+      config.base = '/ignite-desafio05/'
+    }
+    return config
+  }
 };
 export default config;

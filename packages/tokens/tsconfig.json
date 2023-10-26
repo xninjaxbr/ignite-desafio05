@@ -1,4 +1,4 @@
 {
-  "extends": "@myll-ui/ts-config/base.json",
+  "extends": "@mll-ui/ts-config/base.json",
   "include": ["src"]
 }

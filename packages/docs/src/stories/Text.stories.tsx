@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Text, TextProps } from '@myll-ui/react'
+import { Text, TextProps } from '@mll-ui/react'
 
 
 

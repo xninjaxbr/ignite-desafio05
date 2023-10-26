@@ -1,5 +1,5 @@
 {
-  "name": "@myll-ui/react",
+  "name": "@mll-ui/react",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -30,9 +30,9 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@myll-ui/eslint-config": "*",
-    "@myll-ui/tokens": "*",
-    "@myll-ui/ts-config": "*",
+    "@mll-ui/eslint-config": "*",
+    "@mll-ui/tokens": "*",
+    "@mll-ui/ts-config": "*",
     "@rocketseat/eslint-config": "^2.1.0",
     "@storybook/theming": "^7.5.1",
     "@types/react": "^18.2.22",

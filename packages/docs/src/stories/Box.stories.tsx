@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps, Text} from '@myll-ui/react'
+import { Box, BoxProps, Text} from '@mll-ui/react'
 
 export default {
   title: 'Surfaces/Box',
@@ -22,7 +22,7 @@ export const Primary: StoryObj<BoxProps> = {
 
 
 // import type { StoryObj, Meta } from '@storybook/react'
-// import { Button, ButtonProps } from '@myll-ui/react'
+// import { Button, ButtonProps } from '@mll-ui/react'
 
 // export default {
 //   title: 'Form/Button',

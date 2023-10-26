@@ -1,4 +1,4 @@
 {
-  "extends": "@myll-ui/ts-config/react.json",
+  "extends": "@mll-ui/ts-config/react.json",
   "include": ["src"]
 }
