@@ -78,6 +78,9 @@ export default {
         Myll_40: space[40],
         Myll_64: space[64],
         Myll_80: space[80],
+      },
+      boxShadow: {
+        Myll_focus: `0 0 0 2px ${colors.gray100}`,
       }
 
     },

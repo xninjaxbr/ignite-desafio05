@@ -18,7 +18,7 @@ export const Box = ({
   return React.createElement(
     Tag,
     {
-      className: `p-4 rounded-Myll_md bg-Myll_gray800 border border-Myll_gray600 text-Myll_gray100`
+      className: `p-6 rounded-Myll_md bg-Myll_gray800 border border-Myll_gray600 text-Myll_gray100`
        ,
       style,
       ...props,

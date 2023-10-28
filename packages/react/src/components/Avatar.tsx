@@ -9,7 +9,7 @@ export interface AvatarProps extends ComponentProps<typeof Avatar.Image> {
 export function AvatarComp(
 props: AvatarProps) {
   return(
-    <Avatar.Root className='rounded-Myll_full inline-block w-12 h-12 overflow-hidden'>
+    <Avatar.Root className='rounded-Myll_full inline-block w-16 h-16 overflow-hidden'>
         <Avatar.Image {...props} className='w-full h-full object-cover'>
 
         </Avatar.Image>
