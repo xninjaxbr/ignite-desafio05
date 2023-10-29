@@ -1,5 +1,11 @@
 # @mll-ui/tokens
 
+## 2.0.0
+
+### Major Changes
+
+- Add Toast and Tooltip components
+
 ## 1.1.1
 
 ### Patch Changes
