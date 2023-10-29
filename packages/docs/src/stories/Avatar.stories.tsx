@@ -1,9 +1,9 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { AvatarComp, AvatarProps} from '@mll-ui/react'
+import { Avatar, AvatarProps} from '@mll-ui/react'
 
 export default {
   title: 'Data display/Avatar',
-  component: AvatarComp,
+  component: Avatar,
   args: {
     
   }
