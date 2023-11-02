@@ -1,22 +1,21 @@
-import React, { CSSProperties, ReactNode } from 'react'
+import React, { ComponentProps } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-export interface BoxProps extends React.HTMLProps<HTMLDivElement> {
-  type?: 'label' | 'div'
-  children?: ReactNode
-  style?: CSSProperties
+export interface BoxProps extends ComponentProps<'div'> {
+  as: string
 }
 
-export const Box = ({ children, type = 'div', style, ...props }: BoxProps) => {
-  const Tag = type as keyof JSX.IntrinsicElements
-
+export const Box = ({ as = 'div', className, ...props }: BoxProps) => {
   return React.createElement(
-    Tag,
+    as,
     {
-      className: `p-6 rounded-Myll_md bg-Myll_gray800 border border-Myll_gray600 text-Myll_gray100`,
-      style,
+      className: twMerge(
+        'p-6 rounded-Myll_md bg-Myll_gray800 border border-Myll_gray600 text-Myll_gray100 ',
+        className,
+      ),
       ...props,
     },
-    children,
+    props.children,
   )
 }
 

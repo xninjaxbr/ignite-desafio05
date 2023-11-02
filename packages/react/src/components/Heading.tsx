@@ -1,30 +1,45 @@
-import React, { HTMLProps, ReactNode } from 'react'
+import React, { HTMLProps } from 'react'
+import {tv, VariantProps} from 'tailwind-variants'
 
-export interface HeadingProps extends HTMLProps<HTMLHeadingElement> {
-  sizeH?: 'lg' | '2xl' | '4xl' | '6xl' | '8xl' | '9xl'
-  type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
-  children: ReactNode
+
+
+const heading = tv({
+  base: ['font-sans font-Myll_bold leading-Myll_shorter m-0 text-Myll_gray100'],
+  variants: {
+    sizeHead: {
+      xl: 'text-xl',
+      '2xl': 'text-2xl',
+      '4xl': 'text-4xl',
+      '6xl': 'text-6xl',
+      '8xl': 'text-8xl',
+      '9xl': 'text-9xl'
+    },
+  },
+  defaultVariants: {
+    sizeHead: 'xl',
+
+  }
+})
+
+export interface HeadingProps extends HTMLProps<HTMLHeadingElement>,VariantProps<typeof heading>  {
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
 export function Heading({
-  sizeH = 'lg',
-  type = 'h2',
   children,
-  ...rest
+  sizeHead,
+  className,
+  as = 'h2',
+  ...props
 }: HeadingProps) {
-  const Tag = type as keyof JSX.IntrinsicElements
+  const Tag = as as keyof JSX.IntrinsicElements
 
   return React.createElement(
     Tag,
     {
-      className: `text-Myll_gray100 font-Myll_bold leading-Myll_shorter m-0
-      ${sizeH === 'lg' ? 'text-Myll_lg' : ''}
-      ${sizeH === '2xl' ? 'text-Myll_2xl' : ''}
-      ${sizeH === '4xl' ? 'text-Myll_4xl' : ''}
-      ${sizeH === '6xl' ? 'text-Myll_6xl' : ''}
-      ${sizeH === '8xl' ? 'text-Myll_8xl' : ''}
-      ${sizeH === '9xl' ? 'text-Myll_9xl' : ''}`,
-      ...rest,
+      className: heading({sizeHead, className}),
+      ...props,
+
     },
     children,
   )

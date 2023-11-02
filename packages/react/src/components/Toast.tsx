@@ -17,7 +17,7 @@ export const Toast = ({
   const timerRef = React.useRef(0)
 
   return (
-    <ToastUI.Provider swipeDirection="right" duration={7000}>
+    <ToastUI.Provider swipeDirection="right" duration={5000}>
       <button
         onClick={() => {
           setOpen(false)
@@ -32,7 +32,7 @@ export const Toast = ({
 
       <ToastUI.Root
         {...props}
-        className="absolute bottom-0 right-0 m-2 items-center gap-x-4 rounded-md bg-Myll_gray800 p-4 px-5 py-3 data-[swipe=cancel]:translate-x-0 data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[state=closed]:animate-hide data-[state=open]:animate-slideIn data-[swipe=end]:animate-swipeOut data-[swipe=cancel]:transition-[transform_200ms_ease-out]"
+        className="absolute bottom-0 right-0 m-2 items-center gap-x-4 rounded-md bg-Myll_gray800 p-4 px-5 py-3 data-[swipe=cancel]:translate-x-0 data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[state=closed]:animate-hide data-[state=open]:animate-slideInToast data-[swipe=end]:animate-swipeOutToast data-[swipe=cancel]:transition-[transform_200ms_ease-out]"
         open={open}
         onOpenChange={setOpen}
       >

@@ -1,5 +1,11 @@
 # @mll-ui/react
 
+## 3.0.0
+
+### Major Changes
+
+- Install and update Tailwind css Variants
+
 ## 2.0.0
 
 ### Major Changes

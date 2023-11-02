@@ -53,7 +53,7 @@ export default {
         Myll_bold: fontWeights.bold,
       },
       fontFamily: {
-        Myll_default: fonts.default,
+        sans: fonts.default,
         Myll_mono: fonts.code,
       },
       lineHeight: {
@@ -96,20 +96,30 @@ export default {
           to: { opacity: '0' },
         },
         slideIn: {
+          from: { transform: 'translateY(-100%)' },
+          to: { transform: 'translateY(0)' },
+        },
+        swipeOut: {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(-100%)' },
+        },
+        slideInToast: {
           from: {
             transform: 'translateX(calc(100% + var(--viewport-padding)))',
           },
           to: { transform: 'translateX(0)' },
         },
-        swipeOut: {
+        swipeOutToast: {
           from: { transform: 'translateX(var(--radix-toast-swipe-end-x))' },
           to: { transform: 'translateX(calc(100% + var(--viewport-padding)))' },
         },
       },
       animation: {
         hide: 'hide 100ms ease-in',
-        slideIn: 'slideIn 150ms cubic-bezier(0.16, 1, 0.3, 1)',
-        swipeOut: 'swipeOut 100ms ease-out',
+        slideIn: 'slideIn 200ms ease-in',
+        swipeOut: 'swipeOut 200ms ease-out',
+        slideInToast: 'slideIn 350ms cubic-bezier(0.16, 1, 0.3, 1)',
+        swipeOutToast: 'swipeOut 200ms ease-out',
       },
     },
   },

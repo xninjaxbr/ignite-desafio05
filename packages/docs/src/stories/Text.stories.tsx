@@ -25,11 +25,13 @@ export default {
   
 } as Meta<TextProps>
 
-export const P: StoryObj<TextProps> = {}
+export const P: StoryObj<TextProps> = {
+}
 export const Strong: StoryObj<TextProps> = {
     args:{
     
-        type: "strong"
+        type: "strong",
+       
     }
 }
 export const CustomTag: StoryObj<TextProps> = {

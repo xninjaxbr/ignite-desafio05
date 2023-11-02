@@ -23,6 +23,9 @@ export default {
     },
     disabled: {
       control:{ type: 'boolean'}
+    },
+    svg: {
+      control:{ type: null}
     }
   }
   
@@ -51,7 +54,7 @@ args: {
 
 export const Small: StoryObj<ButtonProps> = {
   args: {
-    sizeBtn: 'sm'
+    sizeBtn: 'md',
   }
 }
 

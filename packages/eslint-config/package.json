@@ -1,11 +1,11 @@
 {
   "name": "@mll-ui/eslint-config",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "license": "ISC",
   "private": true,
   "main": "index.js",
   "devDependencies": {
-    "@rocketseat/eslint-config": "^2.1.0",
+    "@rocketseat/eslint-config/react": "^2.1.0",
     "eslint": "^8.51.0"
   }
 }
