@@ -11,7 +11,8 @@ export default {
 
 export const Primary: StoryObj<AvatarProps> = {
     args:{
-        src: 'https://github.com/xninjaxbr.png'
+        src: 'https://github.com/xninjaxbr.png',
+        className: "opacity-50"
     }
 }
 export const Fallback: StoryObj<AvatarProps> = {

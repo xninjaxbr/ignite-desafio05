@@ -1,15 +1,21 @@
 import * as AvatarUI from '@radix-ui/react-avatar'
 import { User } from 'phosphor-react'
 import { ComponentProps } from 'react'
+import {twMerge} from 'tailwind-merge'
+ 
+export interface AvatarProps extends ComponentProps<typeof AvatarUI.Image>{
+  src?: string
+  className: string
+}
 
-export type AvatarProps = ComponentProps<typeof AvatarUI.Image>
-
-export function Avatar(props: AvatarProps) {
+export function Avatar({src, className='' , ...props}: AvatarProps) {
   return (
-    <AvatarUI.Root className="inline-block h-16 w-16 overflow-hidden rounded-Myll_full">
+    <AvatarUI.Root className="inline-block h-16 w-16 overflow-hidden rounded-Myll_full"
+    >
       <AvatarUI.Image
         {...props}
-        className="h-full w-full object-cover"
+        className={twMerge("h-full w-full object-cover ", className)}
+        src={src}
       ></AvatarUI.Image>
       <AvatarUI.Fallback
         delayMs={600}

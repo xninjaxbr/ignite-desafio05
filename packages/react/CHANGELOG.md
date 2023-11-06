@@ -1,5 +1,11 @@
 # @mll-ui/react
 
+## 3.0.1
+
+### Patch Changes
+
+- Change Avatar
+
 ## 3.0.0
 
 ### Major Changes
