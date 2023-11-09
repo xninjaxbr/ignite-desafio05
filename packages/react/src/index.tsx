@@ -11,4 +11,4 @@ export * from './components/MultStep'
 export * from './components/Tooltip'
 export * from './components/Toast'
 
-export * from 'tailwindcss'
+import './input.css'

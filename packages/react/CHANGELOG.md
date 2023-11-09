@@ -1,5 +1,11 @@
 # @mll-ui/react
 
+## 3.0.3
+
+### Patch Changes
+
+- teste
+
 ## 3.0.2
 
 ### Patch Changes
