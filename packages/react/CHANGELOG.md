@@ -1,5 +1,11 @@
 # @mll-ui/react
 
+## 3.0.2
+
+### Patch Changes
+
+- add tailwind in index
+
 ## 3.0.1
 
 ### Patch Changes
