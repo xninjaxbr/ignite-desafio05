@@ -5,16 +5,18 @@ import {twMerge} from 'tailwind-merge'
  
 export interface AvatarProps extends ComponentProps<typeof AvatarUI.Image>{
   src?: string
-  className: string
+  className?: string
 }
 
 export function Avatar({src, className='' , ...props}: AvatarProps) {
   return (
-    <AvatarUI.Root className="inline-block h-16 w-16 overflow-hidden rounded-Myll_full"
+    <AvatarUI.Root 
     >
       <AvatarUI.Image
         {...props}
-        className={twMerge("h-full w-full object-cover ", className)}
+        className={twMerge("h-full w-full object-cover ",
+        "inline-block h-16 w-16 overflow-hidden rounded-Myll_full"
+        , className)}
         src={src}
       ></AvatarUI.Image>
       <AvatarUI.Fallback

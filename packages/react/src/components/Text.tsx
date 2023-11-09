@@ -1,5 +1,6 @@
-import React, { HTMLProps } from 'react'
+import React, { ComponentProps, HTMLProps } from 'react'
 import {tv, VariantProps} from 'tailwind-variants'
+import { twMerge } from 'tailwind-merge'
 
 
 
@@ -35,8 +36,9 @@ const text = tv({
   }
 })
 
-export interface TextProps extends HTMLProps<HTMLHeadingElement>,VariantProps<typeof text>  {
+export interface TextProps extends ComponentProps<'p'>,VariantProps<typeof text>  {
   as?: 'p' | 'strong' | 'span' 
+  className?: string
 }
 
 export function Text({
@@ -52,7 +54,7 @@ export function Text({
   return React.createElement(
     Tag,
     {
-      className: text({sizeTxt, variant, className}),
+      className: twMerge(text({sizeTxt, variant, className}), className),
       ...props,
 
     },

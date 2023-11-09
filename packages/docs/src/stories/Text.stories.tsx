@@ -26,6 +26,9 @@ export default {
 } as Meta<TextProps>
 
 export const P: StoryObj<TextProps> = {
+  args: {
+    className: "opacity-50 text-white",
+  }
 }
 export const Strong: StoryObj<TextProps> = {
     args:{
